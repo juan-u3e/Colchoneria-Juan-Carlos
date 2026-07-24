@@ -1,0 +1,61 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+
+footer {
+  background-color: $dark-bg;
+  color: $text-light;
+  padding: 30px 15px;
+  text-align: center;
+
+  article {
+    max-width: 400px;
+    margin: 0 auto 20px;
+    @include flex-center(column, flex-start, stretch);
+    gap: 10px;
+
+    textarea {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #444;
+      background-color: $dark-input-bg;
+      color: $text-light;
+    }
+
+    button {
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: $primary-color;
+      color: $text-light;
+      font-weight: bold;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $primary-hover;
+      }
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    @include flex-center(row, center, center);
+    gap: 15px;
+    margin-bottom: 20px;
+
+    a {
+      text-decoration: none;
+      cursor: pointer;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+
+  p {
+    font-size: 0.8rem;
+    color: #aaa;
+  }
+}

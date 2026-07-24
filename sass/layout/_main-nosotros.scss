@@ -1,0 +1,23 @@
+@use '../utilities/variables' as *;
+
+main.nosotros {
+  flex: 1;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px 20px 10px; 
+  text-align: center;
+
+  h3 {
+    font-size: 1.8rem;
+    color: $text-dark;
+    padding-top: 80px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: $text-muted;
+    margin-bottom: 0;
+  }
+}

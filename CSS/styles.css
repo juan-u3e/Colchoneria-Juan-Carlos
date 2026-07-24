@@ -197,40 +197,24 @@ main.otros-productos .grid-productos {
   }
 }
 
-main.entregas {
-  flex: 1 0 auto;
+main.nosotros {
+  flex: 1;
   max-width: 800px;
-  padding: 40px 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  margin: 0 auto;
+  padding: 30px 20px 10px;
   text-align: center;
 }
-main.entregas h2 {
+main.nosotros h3 {
+  font-size: 1.8rem;
   color: #111111;
-  margin-bottom: 10px;
-}
-main.entregas h3 {
-  font-size: 1.25rem;
-  color: #007bff;
-  font-weight: 600;
+  padding-top: 80px;
   margin-bottom: 20px;
 }
-main.entregas p {
-  font-size: 1rem;
-  line-height: 1.6;
+main.nosotros p {
+  font-size: 1.05rem;
+  line-height: 1.7;
   color: #555555;
-  margin: 0 0 12px 0;
-  max-width: 650px;
-}
-main.entregas img {
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-  border-radius: 8px;
-  margin-top: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 0;
 }
 
 main.locales {
@@ -273,24 +257,40 @@ main.locales section a:hover {
   text-decoration: underline;
 }
 
-main.nosotros {
-  flex: 1;
+main.entregas {
+  flex: 1 0 auto;
   max-width: 800px;
-  margin: 0 auto;
-  padding: 30px 20px 10px;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
-main.nosotros h3 {
-  font-size: 1.8rem;
+main.entregas h2 {
   color: #111111;
-  padding-top: 80px;
+  margin-bottom: 10px;
+}
+main.entregas h3 {
+  font-size: 1.25rem;
+  color: #007bff;
+  font-weight: 600;
   margin-bottom: 20px;
 }
-main.nosotros p {
-  font-size: 1.05rem;
-  line-height: 1.7;
+main.entregas p {
+  font-size: 1rem;
+  line-height: 1.6;
   color: #555555;
-  margin-bottom: 0;
+  margin: 0 0 12px 0;
+  max-width: 650px;
+}
+main.entregas img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /*# sourceMappingURL=styles.css.map */

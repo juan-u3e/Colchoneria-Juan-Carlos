@@ -1,0 +1,60 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 15px;
+  font-family: $font-main;
+  color: $text-main;
+
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 25px;
+  }
+
+  .video-destacado {
+    background-color: #f0f4f8;
+    border: 1px solid #d0dbe5;
+    border-radius: $radius-md;
+    padding: 20px;
+    margin-bottom: 35px;
+    text-align: center;
+
+    h4 {
+      margin: 25px;
+      font-size: 1.25rem;
+      color: $text-dark;
+    }
+
+    video {
+      width: 100%;
+      max-width: 700px;
+      border-radius: 6px;
+      background-color: #000;
+    }
+  }
+
+  .categoria {
+    margin-bottom: 40px;
+
+    h3 {
+      font-size: 1.4rem;
+      border-bottom: 2px solid $primary-color;
+      padding-bottom: 8px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .grid-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+
+  .card {
+    @include card-style;
+  }
+}

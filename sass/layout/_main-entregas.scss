@@ -1,0 +1,40 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+
+main.entregas {
+  flex: 1 0 auto;
+  max-width: 800px;
+  padding: 40px 20px;
+  @include flex-center(column, center, center);
+  text-align: center;
+
+  h2 {
+    color: $text-dark;
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    color: $primary-color; 
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: $text-muted;
+    margin: 0 0 12px 0;
+    max-width: 650px; 
+  }
+
+  img {
+    width: 100%;
+    max-width: 500px; 
+    height: auto;
+    border-radius: $radius-md;
+    margin-top: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+  }
+}
